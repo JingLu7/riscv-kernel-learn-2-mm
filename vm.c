@@ -80,8 +80,8 @@ void kvminit(){
     kernel_pagetable = (pagetable_t) kalloc();
     memset(kernel_pagetable, 0, PGSIZE);
 
-    kvmmap(kernel_pagetable, UART0, PGSIZE, UART0, PTE_R | PTE_W);
-    kvmmap(kernel_pagetable, KERNBASE, PHYSTOP - KERNBASE, KERNBASE, PTE_R | PTE_W | PTE_X);
+    kvmmap(kernel_pagetable, UART0,  UART0, 、PGSIZE, PTE_R | PTE_W);
+    kvmmap(kernel_pagetable, KERNBASE, KERNBASE, PHYSTOP - KERNBASE, PTE_R | PTE_W | PTE_X);
 }
 
 

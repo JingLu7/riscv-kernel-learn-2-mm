@@ -7,10 +7,10 @@
 串口通信: 通过 UART 实现字符输出功能 uart.c:4-18
 编译和运行
 # 编译内核  
-'''make'''  
+```make```  
   
 在 QEMU 中运行  
-'''make qemu'''
+```make qemu```
 
 项目使用 RISC-V 交叉编译工具链，生成 kernel.elf 可执行文件 Makefile:1-12 。
 
